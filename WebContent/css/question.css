@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body {
+    
+    background: #00BFFF;
+}
+.tp{
+    
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fd;
+	color: black;
+    border-radius: 15px;
+    padding: 3%;
+    margin: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid white;
+    box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
+}
+.mcq{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bcrumb{
+    margin-left: 45%;
+    padding: 10px;
+    background-color:   #0000FF;
+    color: aliceblue;
+    border-radius: 15px;
+}
+#countdown{
+    line-height: 55px;
+    display: inline-flex;
+    font-size: 25px;
+    height: 20px;
+    width: 80px;
+    margin-left: -70%;
+}
+.question{
+    font-size: 200%;
+    padding: 2%;
+}
+.options{
+    font-size: 150%;
+    padding: 1%;
+}
+label{
+    display: block;
+}
+.option{
+    display: flex;
+    flex-direction: row;
+}
+.buttons{
+    display: flex;
+    margin-top: 2%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.submit{
+    color: white;
+    font-size: 100%;
+    display: inline;
+    padding: 1%;
+    height: 1%;
+    background-color: #0000FF;
+    border-radius: 15px;
+    border: 1px solid   #0000FF;
+}
+button{
+    font-size: 150%;
+    display: inline;
+    padding: 1%;
+    height: 1%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border: 1px solid  rgba(247,89,89,1);
+}
+button:hover{
+    color:white;
+    background: rgb(240, 86, 112);
+}
+.options{
+    padding-left: 7%;
+    display: flex;
+}
+input {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color:  black;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+nav>h2{
+    padding: 0.5%;
+    margin: 0.5%;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000FF;
+    padding: 0.5%;
+    margin: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+}
+@media only screen and (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nan>h2,nav>a{
+        margin: 2%;
+        font-size: 150%;
+    }
+}

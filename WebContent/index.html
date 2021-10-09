@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Candidate Login</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <div class="btn-admin">
+          <a class="btn btn-danger mt-2 ml-2" href="admin.jsp"> Admin Login</a>
+        </div>
+        
+        <main>
+            <div class="boxcenter">
+            
+                <div class="login">
+                    <h2>Assessment</h2>
+                    <form action="question.jsp" method="POST" >
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Enter Your Name" required autofocus><br>
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Enter Your Email " required><br>
+                         <label>Test Id</label>
+                        <input type="number" name="test_id" placeholder="Enter Test Id" required><br>
+                        <input type="submit" name="Submit" value="Start Test"><br>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

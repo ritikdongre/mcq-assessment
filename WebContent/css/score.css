@@ -1,0 +1,36 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    background-color: dodgerblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxcenter{
+    height: 50%;
+    background-color: white;
+    color: black;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
+}
+.result{
+    margin: auto;
+}
+h3{
+    text-align: center;
+}
+h2{
+    color:dodgerblue;
+    text-align: center;
+    padding: 2%;
+    font-size: 200%;
+    font-weight: 900;
+    margin-bottom: 10%;
+}
