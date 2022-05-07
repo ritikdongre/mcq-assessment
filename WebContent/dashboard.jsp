@@ -38,40 +38,6 @@
 						response.sendRedirect("admin.jsp");
 					}
                     
-  
-				
-					
-					
-				try{
-		
-		   String ques = request.getParameter("question");
-	   	   String opt1 = request.getParameter("opt1");
-	       String opt2 = request.getParameter("opt2");
-	   	   String opt3= request.getParameter("opt3");
-	    	String opt4 = request.getParameter("opt4");
- 	   		String ans = request.getParameter("answer");
- 	   
-		String q = "insert into questions(question, option1, option2, option3, option4, answer) values(?,?,?,?,?,?)";
-			
-			//preparedStatement
-			PreparedStatement pstmt = ConnectionProvider.getConnection().prepareStatement(q);
-			
-			//set value of parameter
-			
-			pstmt.setString(1,ques);
-			pstmt.setString(2, opt1 );
-			pstmt.setString(3, opt2 );
-			pstmt.setString(4, opt3 );
-			pstmt.setString(5, opt4 );
-			pstmt.setString(6, ans );
-			
-			//execute
-			pstmt.executeUpdate();
-	}catch (Exception e){
-		e.printStackTrace();
-	}
-
-
 %>
         <main>
             <div class="boxcenter">

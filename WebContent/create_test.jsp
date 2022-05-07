@@ -28,6 +28,10 @@
            int max = 999999;  
            int ran = (int)(Math.random()*(max-min+1)+min); 
           
+           session.setAttribute("number", no);
+           session.setAttribute("count", countdown);
+           session.setAttribute("test_id", ran);
+;           
     	   
 		String q = "insert into test_configuration(test_id,no_of_questions,countdown) values(?,?,?)";
 			
@@ -41,7 +45,7 @@
 			
 			//execute
 			pstmt.executeUpdate();
-			response.sendRedirect("dashboard.jsp?otp="+session.getAttribute("otp_value").toString());
+			response.sendRedirect("show_test_id.jsp");
 			
 		} catch (Exception e) {
 			

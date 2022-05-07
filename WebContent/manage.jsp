@@ -18,8 +18,14 @@
   <%@page import = "java.io.PrintWriter" %>
   <%@page import = "javax.servlet.http.HttpSession" %>
 
-<% 
-	
+<% 	 
+try{
+String otp = session.getAttribute("otp_value").toString();
+}catch(Exception e)
+{
+	response.sendRedirect("admin.jsp");
+}
+
 	String q = "select count(*) from questions";
 	Statement st = ConnectionProvider.getConnection().createStatement();
 	ResultSet rs = st.executeQuery(q);

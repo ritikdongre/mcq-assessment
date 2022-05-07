@@ -48,14 +48,6 @@ h2{
     color: black;
     
 }
-.btn-admin{
-    background-color: #00BFFF;
-
-}
-a{
-    text-decoration: none;
-    color: red;
-}
 form{
     display: flex;
     flex-direction: column;

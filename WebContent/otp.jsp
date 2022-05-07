@@ -46,7 +46,7 @@
             String message = "your otp is "+ otp_no ;
             System.out.println(message);
             String subject = "OTP Verification";
-            String from = "dongreritik2002@gmail.com";
+            String from = "dongreritik@gmail.com";
             
 					String to = request.getParameter("email");
 					
@@ -66,7 +66,7 @@
 								Session s=Session.getInstance(properties, new Authenticator() {
 									@Override
 									protected PasswordAuthentication getPasswordAuthentication() {				
-										return new PasswordAuthentication("dongreritik2002@gmail.com", "ritik@26");
+										return new PasswordAuthentication("dongreritik2002@gmail.com", "Ritik@123");
 									}
 									
 									

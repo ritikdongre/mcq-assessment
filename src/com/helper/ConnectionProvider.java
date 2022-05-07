@@ -15,15 +15,17 @@ public class ConnectionProvider {
 			Class.forName("com.mysql.jdbc.Driver");
 			
 			//create a connection
-//			String url = "jdbc:mysql://localhost:3307/mcq_app";
-//			String username = "admin";
-//			String pwd = "Admin$123";
+//          url to connect with localhost			
+//			String url = "jdbc:mysql://localhost:3306/mcq_app";
+//			String username = "root";
+//			String pwd = "12345";
 			
+//          url to connect to remote database server on azure cloud
+			String url = "jdbc:mysql://mcq-assessment-server.mysql.database.azure.com:3306/mcq_app";
+			String username = "rd";
+			String pwd = "Ritik@123";
 			
-			String url = "jdbc:mysql://34.93.84.125/mcq_app?useSSL=false";
-			String username = "ritikdongre";
-			String pwd = "12345";
-		    con = DriverManager.getConnection(url, username, pwd);
+			con = DriverManager.getConnection(url, username, pwd);
 
 			
 			}

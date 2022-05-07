@@ -3,6 +3,14 @@
 <%@page import="java.sql.Statement"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%
+try{
+String otp = session.getAttribute("otp_value").toString();
+}catch(Exception e)
+{
+	response.sendRedirect("admin.jsp");
+}
+%>
 <!DOCTYPE html>
 <html>
     <head>

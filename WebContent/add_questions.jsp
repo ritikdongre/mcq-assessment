@@ -16,6 +16,15 @@
   <%@page import = "javax.servlet.http.HttpSession" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
+<%
+try{
+String otp = session.getAttribute("otp_value").toString();
+}catch(Exception e)
+{
+	response.sendRedirect("admin.jsp");
+}
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,15 +37,13 @@
     </head>
     <body>
        
-      <% 
-      	String str = session.getAttribute("otp_value").toString();
-      %>
+     
         <main>
             <div class="boxcenter">
             
                 <div class="login">
                     <h2>Question Panel</h2>
-                    <form action="dashboard.jsp" method="POST">
+                    <form action="display.jsp" method="POST">
                         <label>Question</label>
                         <input type="text" name="question" placeholder="Enter the Question" required autofocus><br>
                         <label>Option 1:</label>
@@ -49,11 +56,13 @@
                         <input type="text" name="opt4" placeholder="Enter option 4" required><br>
                         <label>Answer</label>
                         <input type="text" name="answer" placeholder="Enter the Answer" required><br>
-                        <input type="submit" name="Submit" value="ADD QUESTION"><br>
-		<input type="hidden" name="otp" value=<%= str%>>
+                  
+                        <input type="submit" name="Submit" value="Add Question"><br>
+					
                     </form>
                 </div>
             </div>
         </main>
+            
     </body>
 </html>
